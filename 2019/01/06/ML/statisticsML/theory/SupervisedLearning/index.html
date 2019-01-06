@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Alden">
 <meta property="og:description" content="监督学习(supervised learning)的任务是学习一个模型，使模型能够对任意给定的输入，对其相应的输出做出一个好的预测。监督学习是及其重要的统计学习分支，也是统计学习中内容最丰富，应用最广泛的部分">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T19:42:27.423Z">
+<meta property="og:updated_time" content="2019-01-06T07:00:43.440Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="监督学习概论">
 <meta name="twitter:description" content="监督学习(supervised learning)的任务是学习一个模型，使模型能够对任意给定的输入，对其相应的输出做出一个好的预测。监督学习是及其重要的统计学习分支，也是统计学习中内容最丰富，应用最广泛的部分">
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 966 个字)
+                    10 分钟 读完 (大约 1532 个字)
                 </span>
                 
             </div>
@@ -190,8 +190,8 @@
 </ul>
 </li>
 <li><strong>模型实际上都是定义在特征空间上的</strong></li>
-<li>输入实例\(x\)的特征向量记作$$x=(x^{(1)},x^{(2)},…,x^{(i)},…,x^{(n)})^T$$</li>
-<li>训练数据由输入(或特征向量)与输出对组成，训练集通常表示为$$\mathbf{T}={(x_1,y_1),(x_2,y_2),…,(x_n,y_n)}$$</li>
+<li>输入实例\(x\)的特征向量记作$$x=(x^{(1)},x^{(2)},\dots,x^{(i)},\dots,x^{(n)})^T$$</li>
+<li>训练数据由输入(或特征向量)与输出对组成，训练集通常表示为$$\mathbf{T}={(x_1,y_1),(x_2,y_2),\dots,(x_n,y_n)}$$</li>
 <li>测试数据也由输入(或特征向量)与输出对组成，又称之为样本或者样本点</li>
 <li>输入变量\(X\)和输出变量\(Y\)可以有不同的类型(连续或者是离散的)，人们习惯根据输入变量和输出变量的类型定义以下几种预测任务类型<ul>
 <li><strong>回归问题</strong>：输入变量和输出变量均为连续变量的预测问题</li>
@@ -218,8 +218,32 @@
 </ul>
 <h3 id="统计学习三要素"><a href="#统计学习三要素" class="headerlink" title="统计学习三要素"></a>统计学习三要素</h3><p>$$统计学习方法=模型+策略+算法$$</p>
 <ul>
-<li>模型</li>
-<li>策略</li>
+<li>模型<ul>
+<li>在监督学习中，模型就是所要学习的条件概率分布或决策函数。</li>
+<li>模型的<strong>假设空间</strong>包含所有可能的条件概率分布或决策函数。</li>
+<li>假设空间中的模型一般有无穷多个<ul>
+<li><strong>假设空间</strong>可以定义为决策函数的集合:$$\mathbf{F}=\{f|Y=f(X)\}$$\(X\)与\(Y\)是定义在输入空间\(X\)和输出空间\(Y\)的随机变量，这时\(F\)通常是由一个参数向量决定的函数族:$$\mathbf{F}=\{f|Y=f_{\theta}(X),\theta\in\mathbf{R}^n\}$$参数向量\(\theta\)取值于\(n\)维度欧式空间\(\mathbf{R}^n\)，称为参数空间</li>
+<li><strong>假设空间</strong>也可以定义为条件概率的集合:$$\mathbf{F}=\{P|P(Y|X)\}$$\(X\)与\(Y\)是定义在输入空间\(X\)和输出空间\(Y\)的随机变量，这时\(F\)通常是由一个参数向量决定的条件概率分布族:$$\mathbf{F}=\{P|P_{\theta}(Y|X),\theta\in\mathbf{R}^n\}$$参数向量\(\theta\)取值于\(n\)维度欧式空间\(\mathbf{R}^n\)，也称为参数空间</li>
+</ul>
+</li>
+<li>通常称由<strong>决策函数表示的模型为非概率模型</strong>，<strong>条件概率表示的模型为概率模型</strong></li>
+</ul>
+</li>
+<li>策略<ul>
+<li>有了模型的假设空间之后，接下来考虑按照什么样的准则学习或者选择最优的模型。</li>
+<li>损失函数(loss function)也叫代价函数(cost function)：损失函数/代价函数度量模型一次预测的好坏，损失函数是\(f(X)\)和\(Y\)的非负实值函数，记作\(L(Y,f(X))\)，损失函数值越小，模型就越好<ul>
+<li>统计学习常用的损失函数有以下几种:<ul>
+<li>0-1损失函数(0-1 loss function)$$L(Y,f(X))=<br>\begin{cases}<br>1, &amp; Y \ne f(X) \\<br>0, &amp; Y = f(X)<br>\end{cases}$$</li>
+<li>平方损失函数$$L(Y,f(X))=(Y-f(X))^2$$</li>
+<li>绝对损失函数$$L(Y,f(X))=|Y-f(X)|$$</li>
+<li>对数损失函数/对数似然损失函数$$L(Y,P(Y|X))=-\log{P(Y|X)}$$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>风险函数：风险函数度量平均意义下模型预测的好坏，也就是损失函数的期望$$\mathbf{R}_{exp}(f)=E_p[L(Y,f(X))]=\int_{x*y}L(y,f(x))P(x,y)dxdy$$</li>
+</ul>
+</li>
 <li>算法</li>
 </ul>
 <h2 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h2><ol>
