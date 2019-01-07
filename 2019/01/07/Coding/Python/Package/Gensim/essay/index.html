@@ -2,21 +2,23 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>标签: 分类算法 - Alden</title>
+<title>Gensim入门乱七八糟 - Alden</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="Java Python Go PHP 技术渣">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alden">
-<meta property="og:url" content="https://sun-zhen.github.io/tags/分类算法/index.html">
+    <meta name="description" content="初次接触Gensim，这里主要是一些随笔记录">
+<meta name="keywords" content="Python,Gensim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gensim入门乱七八糟">
+<meta property="og:url" content="https://sun-zhen.github.io/2019/01/07/Coding/Python/Package/Gensim/essay/index.html">
 <meta property="og:site_name" content="Alden">
-<meta property="og:description" content="Java Python Go PHP 技术渣">
+<meta property="og:description" content="初次接触Gensim，这里主要是一些随笔记录">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-07T12:33:21.649Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alden">
-<meta name="twitter:description" content="Java Python Go PHP 技术渣">
+<meta name="twitter:title" content="Gensim入门乱七八糟">
+<meta name="twitter:description" content="初次接触Gensim，这里主要是一些随笔记录">
 
 
 
@@ -86,7 +88,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Alden" height="28">
+                <img src="/images/logo.svg" alt="Gensim入门乱七八糟" height="28">
             
             </a>
         </div>
@@ -132,39 +134,28 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">分类算法</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-image">
-        <a href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/" class="image is-7by1">
-            <img class="thumbnail" src="/images/thumbnails/OnePiece/OnePiece001.jpg" alt="贝叶斯分类算法">
-        </a>
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/images/thumbnails/Villages/Villages002.jpeg" alt="Gensim入门乱七八糟">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-01-04T09:42:39.000Z">2019-01-04</time>
+                <time class="level-item has-text-grey" datetime="2019-01-07T12:22:22.000Z">2019-01-07</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/统计学/">统计学</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/统计学/分类算法/">分类算法</a>
+                <a class="has-link-grey -link" href="/categories/Python/">Python</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Python/Gensim/">Gensim</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 176 个字)
+                    几秒 读完 (大约 53 个字)
                 </span>
                 
             </div>
@@ -172,21 +163,24 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/">贝叶斯分类算法</a>
+                Gensim入门乱七八糟
             
         </h1>
         <div class="content">
-            <p>贝叶斯分类算法是统计学的一种分类算法<br></p>
+            <p>初次接触Gensim，这里主要是一些随笔记录<br><a id="more"></a></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> gensim.models <span class="hljs-keyword">import</span> word2vec</span><br><span class="line">sentences = word2vec.LineSentence(<span class="hljs-string">"已经分好词的，用户语句文件"</span>)</span><br><span class="line">model = word2vec.Word2Vec(sentences, size=<span class="hljs-number">100</span>, hs=<span class="hljs-number">1</span>, min_count=<span class="hljs-number">1</span>, window=<span class="hljs-number">3</span>)</span><br></pre></td></tr></table></figure>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Gensim/">Gensim</a>, <a class="has-link-grey -link" href="/tags/Python/">Python</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -194,9 +188,50 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechatpay.jpg" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/01/07/ML/application/LanguageModel/evaluate/">
+                <span class="level-item">语言模型的评估</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -1059,7 +1094,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Alden" height="28">
+                    <img src="/images/logo.svg" alt="Gensim入门乱七八糟" height="28">
                 
                 </a>
                 <p class="is-size-7">
