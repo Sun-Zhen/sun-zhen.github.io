@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Alden">
 <meta property="og:description" content="概率论的基本概念，专有名词的定义等">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-08T04:23:22.101Z">
+<meta property="og:updated_time" content="2019-01-08T07:47:21.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率论基本概念">
 <meta name="twitter:description" content="概率论的基本概念，专有名词的定义等">
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 925 个字)
+                    8 分钟 读完 (大约 1268 个字)
                 </span>
                 
             </div>
@@ -191,7 +191,27 @@
 </ul>
 </li>
 </ul>
-<h3 id="频率与概率"><a href="#频率与概率" class="headerlink" title="频率与概率"></a>频率与概率</h3><h3 id="等可能模型-古典概型"><a href="#等可能模型-古典概型" class="headerlink" title="等可能模型(古典概型)"></a>等可能模型(古典概型)</h3><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<h3 id="频率与概率"><a href="#频率与概率" class="headerlink" title="频率与概率"></a>频率与概率</h3><ul>
+<li>定义：在相同条件下，进行了\(n\)次试验，在这\(n\)次试验中，事件\(A\)发生的次数\(n_A\)称为事件\(A\)发生的<strong>频数</strong>，比值\(n_A/n\)称为事件A发生的<strong>频率</strong>，并记作\(f_n(A)\)</li>
+<li>频率有如下性质<ul>
+<li>\(0 \leq f_n(A) \leq 1\)</li>
+<li>\(f_n(S) = 1\)</li>
+<li>若\(A_1,A_2,\dots,A_k\)是两两互不相容事件，则$$f_n(A_1 \bigcup A_2 \bigcup \dots A_k )=f_n(A_1) + f_n(A_2) + \dots + f_n(A_k)$$</li>
+</ul>
+</li>
+<li>概率：设\(E\)为随机事件，\(S\)是样本空间，对于\(E\)的每一个事件\(A\)赋予一个实数，记作\(P(A)\)，称为事件\(A\)的概率，如果集合函数\(P)\满足下列条件<ul>
+<li>非负性：对于每个事件\(A\)，有\(P(A) \geq 0\)</li>
+<li>规范性：对于必然事件\(S\)，有\(P(S) = 1\)</li>
+<li>可列可加性：设\(A_1,A_2,\dots\)是两两互不相容的事件，即对于\(A_iAj=\emptyset,i \neq j,i,j=1,2,\dots\)有\(P(A_1 \bigcup A_2 \bigcup) = P(A_i) + P(A_2) + \dots\)</li>
+</ul>
+</li>
+<li>频率与概率的关系：当\(n \rightarrow \infty\)时，频率\(f_n(A)\)在一定意义下接近于概率\(P(A)\)，基于这一事实，我们可以将概率\(P(A)\)用来表征 事件\(A\) 在一次试验中发生的可能性大小。</li>
+</ul>
+<h4 id="概率的一些重要的性质"><a href="#概率的一些重要的性质" class="headerlink" title="概率的一些重要的性质"></a>概率的一些重要的性质</h4><ul>
+<li>\(P(\emptyset) = 0\)</li>
+<li></li>
+</ul>
+<h3 id="等可能模型-古典概型"><a href="#等可能模型-古典概型" class="headerlink" title="等可能模型(古典概型)"></a>等可能模型(古典概型)</h3><h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
 <li>确定性现象：一定条件下一定会发生的现象，比如向上抛石子必然会下落</li>
 <li>统计规律性：大量重复试验或者观察中所呈现的固有规律性</li>
 <li>随机现象：一类在个别试验中其结果呈现出不确定性，在大量重复试验中其结果又是具有统计规律性的现象叫做<strong>随机现象</strong></li>
