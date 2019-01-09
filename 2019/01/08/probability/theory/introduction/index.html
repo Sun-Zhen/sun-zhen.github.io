@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Alden">
 <meta property="og:description" content="概率论的基本概念，专有名词的定义等">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-09T06:03:12.781Z">
+<meta property="og:updated_time" content="2019-01-09T15:34:39.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率论基本概念">
 <meta name="twitter:description" content="概率论的基本概念，专有名词的定义等">
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    12 分钟 读完 (大约 1730 个字)
+                    13 分钟 读完 (大约 1895 个字)
                 </span>
                 
             </div>
@@ -234,7 +234,19 @@
 </li>
 <li><strong>实际推断原理</strong>：<strong>概率很小的事件在一次试验中实际上几乎是不发生的</strong></li>
 </ul>
-<h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<h3 id="条件概率"><a href="#条件概率" class="headerlink" title="条件概率"></a>条件概率</h3><blockquote>
+<p>\(P(B|A)=\frac{P(AB)}{P(A)}\)</p>
+</blockquote>
+<ul>
+<li>条件概率也是概率，同样满足概率的以下三个条件<ul>
+<li>非负性：对于每一事件\(B\)，有\(P(B|A)\geq0\)</li>
+<li>规范性：对于必然事件\(S\)，有\(P(S|A)=1\)</li>
+<li>可列可加性：设\(B_1,B_2,\cdots,\)是两两互不相容事件，则有$$P( \mathop{\bigcup}_{i=1}^{\infty} B_i|A) = \sum_{i=1}^{\infty}P(B_i|A) $$</li>
+</ul>
+</li>
+<li>由$$P(A \bigcup B) = P(A) + P(B) + P(AB)$$可以推算出$$P(B_1 \bigcup B_2|A) = P(B_1|A) + P(B_2|A) - P(B_1B_2|A)$$</li>
+</ul>
+<h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
 <li>确定性现象：一定条件下一定会发生的现象，比如向上抛石子必然会下落</li>
 <li>统计规律性：大量重复试验或者观察中所呈现的固有规律性</li>
 <li>随机现象：一类在个别试验中其结果呈现出不确定性，在大量重复试验中其结果又是具有统计规律性的现象叫做<strong>随机现象</strong></li>
@@ -250,6 +262,7 @@
 <li>随机事件：样本空间\(S\)的子集为随机事件，每次随机试验中，当且仅当这一子集中的一个样本点出现时，我们称为这一<strong>事件发生</strong></li>
 <li>必然事件：样本空间\(S\)本身称为<strong>必然事件</strong></li>
 <li>不可能事件：空集\(\emptyset\)不包含任何样本点，每次随机试验必不会发生，所以\(\emptyset\)称为<strong>不可能事件</strong></li>
+<li>条件概率：条件概率考虑的是事件\(A\)已经发生的条件下，事件\(B\)发生的概率。</li>
 </ul>
 <h3 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h3><ul>
 <li>参考资料1:<a href="https://baike.baidu.com/item/%E8%B6%85%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83/4782968?fr=aladdin" target="_blank" rel="noopener">超几何分布-百度百科</a></li>
