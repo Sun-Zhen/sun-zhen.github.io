@@ -7,18 +7,18 @@
 
 
 
-    <meta name="description" content="温习一下排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
+    <meta name="description" content="温习一下古典概型里面排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
 <meta name="keywords" content="概率论,排列组合">
 <meta property="og:type" content="article">
 <meta property="og:title" content="排列组合">
 <meta property="og:url" content="https://sun-zhen.github.io/2019/01/09/probability/theory/PermutationAndCombination/index.html">
 <meta property="og:site_name" content="Alden">
-<meta property="og:description" content="温习一下排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
+<meta property="og:description" content="温习一下古典概型里面排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-09T04:49:55.378Z">
+<meta property="og:updated_time" content="2019-01-09T05:59:23.417Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排列组合">
-<meta name="twitter:description" content="温习一下排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
+<meta name="twitter:description" content="温习一下古典概型里面排列组合的相关知识点。排列问题考虑顺序，组合问题不考虑顺序。">
 
 
 
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 547 个字)
+                    4 分钟 读完 (大约 563 个字)
                 </span>
                 
             </div>
@@ -167,7 +167,7 @@
             
         </h1>
         <div class="content">
-            <p>温习一下排列组合的相关知识点。<strong>排列问题考虑顺序</strong>，<strong>组合问题不考虑顺序</strong>。<br><a id="more"></a></p>
+            <p>温习一下古典概型里面排列组合的相关知识点。<strong>排列问题考虑顺序</strong>，<strong>组合问题不考虑顺序</strong>。<br><a id="more"></a></p>
 <h3 id="排列问题与组合问题的区分"><a href="#排列问题与组合问题的区分" class="headerlink" title="排列问题与组合问题的区分"></a>排列问题与组合问题的区分</h3><blockquote>
 <p>Q1. 一套书共有1-6册，从书架上把他们全部取下，有多少种取法？<br>Q2. 共有5个红球，3个黄球，2个黑球，从中选择2个球，共有多少种选择？<br>Q3. 10个候选人，选3个作为领队，有多少种选择？<br>Q4. 有一把3位数字密码锁，最多试验多少次才能打开？</p>
 </blockquote>
@@ -186,15 +186,15 @@
 <li>第一次有\(n\)种选择，第二次有\(n*(n-1)\)种选择，\(\dots\)，第\(r\)次有\(\frac{n!}{(n-r)!}\)种选择。</li>
 </ul>
 <h4 id="组合可重复问题-目标是转化为组合不可重复问题，然后解决"><a href="#组合可重复问题-目标是转化为组合不可重复问题，然后解决" class="headerlink" title="组合可重复问题(目标是转化为组合不可重复问题，然后解决)"></a>组合可重复问题(目标是转化为组合不可重复问题，然后解决)</h4><ul>
-<li>\( \frac{(r+n-1)!}{r!<em>(r+n-1-r)!} = \frac{(r+n-1)!}{r!</em>(n-1)!} \)</li>
+<li>\( \frac{(r+n-1)!}{r!\times(r+n-1-r)!} = \frac{(r+n-1)!}{r!\times(n-1)!} \)</li>
 <li>按照<a href="https://blog.csdn.net/zeo_m/article/details/80505404" target="_blank" rel="noopener">参考博文1</a>，的演示，让我想起了高中时期的每个选项之前差一个竖线？？？待回忆回忆</li>
 </ul>
 <h4 id="组合不可重复问题"><a href="#组合不可重复问题" class="headerlink" title="组合不可重复问题"></a>组合不可重复问题</h4><ul>
-<li>\(\frac{n!}{(n-r)!}*\frac{1}{r!} \)</li>
+<li>\(\frac{n!}{(n-r)!}\times\frac{1}{r!} \)</li>
 <li>不可重复提现在上面公式中，前面的部分</li>
 </ul>
 <h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><ul>
-<li><a href="https://blog.csdn.net/zeo_m/article/details/80505404" target="_blank" rel="noopener">参考博文1</a></li>
+<li>参考博文1：<a href="https://blog.csdn.net/zeo_m/article/details/80505404" target="_blank" rel="noopener">排列组合详解</a></li>
 </ul>
 
         </div>
