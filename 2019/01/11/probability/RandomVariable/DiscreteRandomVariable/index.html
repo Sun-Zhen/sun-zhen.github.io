@@ -2,21 +2,23 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>标签: 统计学 - Alden</title>
+<title>离散性随机变量及其分布律 - Alden</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="Java Python Go PHP 技术渣">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alden">
-<meta property="og:url" content="https://sun-zhen.github.io/tags/统计学/index.html">
+    <meta name="description" content="概率论-离散性随机变量及其分布律">
+<meta name="keywords" content="概率论,随机变量,离散性随机变量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="离散性随机变量及其分布律">
+<meta property="og:url" content="https://sun-zhen.github.io/2019/01/11/probability/RandomVariable/DiscreteRandomVariable/index.html">
 <meta property="og:site_name" content="Alden">
-<meta property="og:description" content="Java Python Go PHP 技术渣">
+<meta property="og:description" content="概率论-离散性随机变量及其分布律">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-11T06:26:57.589Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alden">
-<meta name="twitter:description" content="Java Python Go PHP 技术渣">
+<meta name="twitter:title" content="离散性随机变量及其分布律">
+<meta name="twitter:description" content="概率论-离散性随机变量及其分布律">
 
 
 
@@ -86,7 +88,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Alden" height="28">
+                <img src="/images/logo.svg" alt="离散性随机变量及其分布律" height="28">
             
             </a>
         </div>
@@ -132,39 +134,28 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">统计学</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-image">
-        <a href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/" class="image is-7by1">
-            <img class="thumbnail" src="/images/thumbnails/OnePiece/OnePiece001.jpg" alt="贝叶斯分类算法">
-        </a>
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/images/thumbnails/Bridge/Bridge001.jpg" alt="离散性随机变量及其分布律">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-01-04T09:42:39.000Z">2019-01-04</time>
+                <time class="level-item has-text-grey" datetime="2019-01-11T03:45:14.000Z">2019-01-11</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/统计学/">统计学</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/统计学/分类算法/">分类算法</a>
+                <a class="has-link-grey -link" href="/categories/概率论/">概率论</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/概率论/随机变量/">随机变量</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 176 个字)
+                    4 分钟 读完 (大约 564 个字)
                 </span>
                 
             </div>
@@ -172,21 +163,50 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/">贝叶斯分类算法</a>
+                离散性随机变量及其分布律
             
         </h1>
         <div class="content">
-            <p>贝叶斯分类算法是统计学的一种分类算法<br></p>
+            <p>概率论-离散性随机变量及其分布律<br><a id="more"></a></p>
+<h3 id="离散性随机变量"><a href="#离散性随机变量" class="headerlink" title="离散性随机变量"></a>离散性随机变量</h3><ul>
+<li>《概率论与数理统计》浙大第四版的定义：有些随机变量的全部可能取值是有限个，或者可列无限多个，这种随机变量称为<strong>离散型随机变量</strong>。</li>
+<li>布朗大学-概率论与数理统计的定义：如果\(X\)是一个随机变量，存在非负函数\(f(x)\)和\(F(X)\),使得$$ \begin{align} P(X=x) &amp;=f(x) \\ P(X&lt;x) &amp;=F(x) \end{align} $$则称\(X\)是一个离散性随机变量<ul>
+<li>其中\(f(x)\)被称为概率质量函数</li>
+<li>其中\(F(x)\)被称为分布函数</li>
+</ul>
+</li>
+<li>根据上面的定义，其实可以看出，我们只需要知道离散型随机变量的所有可能取值，以及对应的概率，我们就可以掌握这个离散性随机变量的统计规律。</li>
+<li>离散性随机变量的分布律<ul>
+<li>定义：设离散性随机变量\(X\)所有可能取的值为\(x_k(k=1，2，\cdots)\)，\(X\)取各个可能值的概率，即事件\( \{ X=x_k \} \)的概率，为$$P\{X=x_k\}=p_k，k=1，2，\cdots$$</li>
+<li>由上述定义，可知\(p_k\)满足一下两个条件<ul>
+<li>\(p_k\geq0，k=1，2，\cdots\)</li>
+<li>\(\sum_{k=1}^{\infty}p_k=1\)<h3 id="离散性随机变量的几种类型"><a href="#离散性随机变量的几种类型" class="headerlink" title="离散性随机变量的几种类型"></a>离散性随机变量的几种类型</h3><h4 id="0-1-分布-伯努利分布"><a href="#0-1-分布-伯努利分布" class="headerlink" title="(0-1)分布(伯努利分布)"></a>(0-1)分布(伯努利分布)</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>伯努利试验：设试验\(E\)只有两个可能结果，\(A\)及\(\overline{A}\)，则称试验\(E\)为<strong>伯努利试验</strong></li>
+<li>(0-1)分布(伯努利分布)定义：如果一个随机变量\(X\)只取值0或1，概率分布是$$P(X=1)=p,P(X=0)=1−p$$则称X符合伯努利分布(Bernoulli)。我们常用伯努利分布来模拟只有两种结果的试验，如抛硬币。</li>
+</ul>
+<h4 id="二项试验"><a href="#二项试验" class="headerlink" title="二项试验"></a>二项试验</h4><ul>
+<li>多重伯努利试验：将单个伯努利试验独立重复的进行\(n\)次，我们称为\(n\)<strong>重伯努利试验</strong></li>
+</ul>
+<h4 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h4><h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><ul>
+<li>参考资料1：《概率论与数理统计》浙大第四版 </li>
+<li>参考资料2：<a href="https://seeing-theory.brown.edu/cn.html" target="_blank" rel="noopener">布朗大学-概率论与数理统计</a></li>
+</ul>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/01/04/statistics/theory/BayesianClassificationAlgorithm001/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/概率论/">概率论</a>, <a class="has-link-grey -link" href="/tags/离散性随机变量/">离散性随机变量</a>, <a class="has-link-grey -link" href="/tags/随机变量/">随机变量</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -194,9 +214,50 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechatpay.jpg" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/01/10/probability/RandomVariable/introduction/">
+                <span class="level-item">随机变量汇总</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -1223,7 +1284,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Alden" height="28">
+                    <img src="/images/logo.svg" alt="离散性随机变量及其分布律" height="28">
                 
                 </a>
                 <p class="is-size-7">
